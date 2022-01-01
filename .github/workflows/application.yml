@@ -33,7 +33,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        cpu_arch: [aarch64, arm, i686, x86_64]
+        cpu_arch: [aarch64]
     steps:
       - name: Checkout
         uses: actions/checkout@v2
