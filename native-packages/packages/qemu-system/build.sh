@@ -8,7 +8,7 @@ builder_step_configure() {
 	CFLAGS+=" $CPPFLAGS"
 	CXXFLAGS+=" $CPPFLAGS"
 
-	if [ "$PACKAGE_TARGET_ARCH" = "aarch64" ]; then
+	if [ "$PACKAGE_TARGET_ARCH" = "i686" ]; then
 		LDFLAGS+=" -latomic"
 	fi
 
